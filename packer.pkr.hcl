@@ -22,6 +22,7 @@ source "proxmox-clone" "git" {
     node = ""
     cores = 2
     sockets = 2
+    # Important : Rocky doesn't support KVM cpu type (kernel panic), use host cpu type
     cpu_type = "host"
     memory = 2048 
     insecure_skip_tls_verify = true	
